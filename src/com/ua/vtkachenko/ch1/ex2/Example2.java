@@ -1,4 +1,4 @@
-package com.ua.vtkachenko.ch2;
+package com.ua.vtkachenko.ch1.ex2;
 
 public class Example2 {
     public static void main(String[] a) {
