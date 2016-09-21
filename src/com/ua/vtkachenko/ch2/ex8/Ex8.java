@@ -7,5 +7,11 @@ public class Ex8 {
         int y = 20;
         x = (y!=10)^(z=false);
         System.out.println(x+", "+y+", "+z);
+
+
+//        boolean f = true;
+//        if (f = false)
+//            System.out.println(f);
+//        System.out.println(f);
     }
 }
