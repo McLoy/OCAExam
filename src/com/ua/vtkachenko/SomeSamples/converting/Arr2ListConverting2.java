@@ -10,7 +10,7 @@ public class Arr2ListConverting2 {
         System.out.println(list.size());
         list.set(1, "test");
         array[0] = "new";
-        for (String b: array) System.out.println(b + " ");
-        list.remove(1); //exception
+        for (String b: array) System.out.print(b + " ");
+        //list.remove(1); //exception
     }
 }
