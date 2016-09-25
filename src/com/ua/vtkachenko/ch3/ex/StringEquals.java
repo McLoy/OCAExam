@@ -43,7 +43,7 @@ public class StringEquals {
         ss.toUpperCase();
         ss.trim();
         ss.substring(1,3);
-        s += " two";
+        ss += " two";
         System.out.println(ss.length());
 
         String a = "";
@@ -70,9 +70,9 @@ public class StringEquals {
 //        System.out.println(b);
 
         StringBuilder puzzle = new StringBuilder("Java");
-        puzzle.reverse();
+        //puzzle.reverse();
         //puzzle.append("vaJ$").substring(0, 4);
-        //puzzle.append("vaJ$").substring(0, 3).deleteCharAt(puzzle.length()-1); //error
+        puzzle.append("vaJ$").delete(0, 3).deleteCharAt(puzzle.length()-1); //error
         System.out.println(puzzle);
 
         char[]c = new char[2];
