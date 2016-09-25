@@ -146,6 +146,14 @@ public class StringEquals {
         DateTimeFormatter f = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
         System.out.println(d.format(f));
 
+        String a1 = "12345";
+        String a2 = "1234" + a1.length();
+        if(a1 == a2){
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
 
     }
 }
