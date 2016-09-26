@@ -12,6 +12,7 @@ import java.util.*;
 public class StringEquals {
     public static void main(String[] args) {
 
+        System.out.println("Question2");
         String s = "Hello";
         String t = new String(s);
         if ("Hello".equals(s)) System.out.println("one");
@@ -20,15 +21,18 @@ public class StringEquals {
         if ("Hello" == s) System.out.println("four");
         if ("Hello" == t) System.out.println("five");
 
+        System.out.println("Question4");
         StringBuilder sb = new StringBuilder();
         sb.append("aaa").insert(1,"bb").insert(4,"ccc");
         System.out.println(sb);
 
+        System.out.println("Question5");
         String s1 = "java";
         StringBuilder s2 = new StringBuilder("java");
         //if (s1 == s2) System.out.println("1"); //error
         if (s1.equals(s2)) System.out.println("2");
 
+        System.out.println("Question6");
         String letters = "abcdef";
         System.out.println(letters.length());
         System.out.println(letters.charAt(3));
@@ -39,6 +43,7 @@ public class StringEquals {
         System.out.println(numbers.substring(7, 7));
         System.out.println(numbers.substring(7));
 
+        System.out.println("Question9");
         String ss = "purr";
         ss.toUpperCase();
         ss.trim();
@@ -46,6 +51,7 @@ public class StringEquals {
         ss += " two";
         System.out.println(ss.length());
 
+        System.out.println("Question10");
         String a = "";
         a += 2;
         a += 'c';
@@ -69,6 +75,7 @@ public class StringEquals {
 //        b.append(4).deleteCharAt(3).delete(3, b.length() - 1);
 //        System.out.println(b);
 
+        System.out.println("Question14");
         StringBuilder puzzle = new StringBuilder("Java");
         //puzzle.reverse();
         //puzzle.append("vaJ$").substring(0, 4);
@@ -123,7 +130,7 @@ public class StringEquals {
         int zz = Collections.binarySearch(hex, "4F");
         System.out.println(xx + " " + yy + " " + zz);
 
-        System.out.println("''''''''''");
+        System.out.println("Question26");
         List<Integer> ages = new ArrayList<>();
         ages.add(Integer.parseInt("5"));
         ages.add(Integer.valueOf("5"));
