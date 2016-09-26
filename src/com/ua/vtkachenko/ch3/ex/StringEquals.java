@@ -123,6 +123,7 @@ public class StringEquals {
 //        list2.set(0, "Sue");
 //        System.out.println(namesss[0]);
 
+        System.out.println("Question25");
         List<String> hex = Arrays.asList("30", "8", "3A", "FF");
         Collections.sort(hex);
         for (String ds : hex) System.out.print(ds + " ");
@@ -135,7 +136,7 @@ public class StringEquals {
         System.out.println("Question26");
         List<Integer> ages = new ArrayList<>();
         ages.add(Integer.parseInt("5"));
-        ages.add(Integer.valueOf("5"));
+        ages.add(Integer.valueOf("6"));
         ages.add(7);
         //ages.add(null); //error
         for (int age : ages) System.out.println(age);
