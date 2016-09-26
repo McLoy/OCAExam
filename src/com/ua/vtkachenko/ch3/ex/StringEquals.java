@@ -3,6 +3,7 @@ package com.ua.vtkachenko.ch3.ex;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 import java.time.DateTimeException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -90,6 +91,7 @@ public class StringEquals {
 
         //l.remove(0); //error
 
+        System.out.println("Question20");
         List<String> list = new ArrayList<String>();
         list.add("one");
         list.add("two");
@@ -103,7 +105,7 @@ public class StringEquals {
         values.remove(0);
         for (Integer v : values) System.out.println(v);
 
-        System.out.println("-----");
+        System.out.println("Question22");
         int[] random = {6, -4, 12, 0, -10};
         int x = 12;
         int y = Arrays.binarySearch(random, x);
@@ -147,6 +149,13 @@ public class StringEquals {
         else if (one.equals(two)) System.out.println("B");
         else System.out.println("C");
 
+        System.out.println("Question29");
+        LocalDate date = LocalDate.parse("2018-04-30", DateTimeFormatter.ISO_LOCAL_DATE);
+        date.plusDays(2);
+        //date.plusHours(3); //such method not defined
+        System.out.println(date.getYear() + " "
+                + date.getMonth() + " " + date.getDayOfMonth());
+
         LocalDateTime d = LocalDateTime.of(2015, 5, 10, 11, 22, 33);
         Period p = Period.of(1, 2, 3);
         d = d.minus(p);
@@ -160,6 +169,26 @@ public class StringEquals {
         } else {
             System.out.println("false");
         }
+
+        System.out.println("====");
+        List<Integer> aa1 = new ArrayList<>();
+        List<Integer> aa2 = new ArrayList<>();
+        List<Integer> aa3 = new ArrayList<>();
+        int[] bbb1 = {1,5,4};
+        int[] bbb2 = {1,5,4};
+        aa1.add(1);
+        aa1.add(5);
+        aa1.add(4);
+        aa2.add(1);
+        aa2.add(5);
+        aa2.add(4);
+        //aa3.remove(0);
+//        if (aa1.equals(aa2)) {System.out.println("1");}
+//        else System.out.println("2");
+
+        if (bbb1.equals(bbb2)) {System.out.println("1");}
+        else System.out.println("2");
+
 
 
     }
