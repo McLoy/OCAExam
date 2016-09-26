@@ -11,7 +11,7 @@ public class NanoCalc {
         int count = 0;
         List<LocalTime> arr = new ArrayList<>();
         arr.add(time);
-        while (arr.get(count) != LocalTime.of(22,00,31,0)){
+        while (arr.get(count) != LocalTime.of(22,00,31,0)){ //fatality loop - dont start it!!!
             LocalTime a = time.plusNanos(100000000);
             arr.add(a);
             count += 1;
