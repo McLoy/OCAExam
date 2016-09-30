@@ -1,6 +1,6 @@
 package com.ua.vtkachenko.ch4.ex2;
 
-public class ex2 {
+public class Ex2 {
 
     final static void method4(){}
     //public final int void method(){]}
