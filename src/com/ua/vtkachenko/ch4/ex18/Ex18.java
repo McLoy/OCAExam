@@ -1,21 +1,21 @@
 package com.ua.vtkachenko.ch4.ex18;
 
-import java.util.Objects;
-
 public class Ex18 {
 
-    private String name;
-    public int count = 0;
-
-    public String getName() {
-        return name;
+    public Ex18(){
+        System.out.println("Constructor by default");
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Ex18(String a){
+        this();
+        System.out.println("SomeString: " + a);
     }
 
     public static void main(String[] args) {
 
+        Ex18 e = new Ex18("Hi");
+
     }
 }
+
+
