@@ -13,9 +13,25 @@ public class Ex18 {
 
     public static void main(String[] args) {
 
-        Ex18 e = new Ex18("Hi");
+        //Ex18 e = new Ex18("Hi");
+        //Ex18Child e = new Ex18Child();
+        Ex18Child g = new Ex18Child("Child call");
 
     }
+}
+
+class Ex18Child extends Ex18{
+
+    public Ex18Child(){
+        super();
+        System.out.println("Child");
+    }
+
+    public Ex18Child(String b){
+        super(b);
+        System.out.println("Child");
+    }
+
 }
 
 
