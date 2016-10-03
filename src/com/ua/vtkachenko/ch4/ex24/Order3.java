@@ -14,7 +14,7 @@ public class Order3 {
     }
     static {
 //        value1 = "g";
-        value2 = "h";
+        //value2 = "h";
 //        value3 = "i";
         //CODE SNIPPET 2
     }
