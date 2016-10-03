@@ -8,6 +8,7 @@ public class BirdSeed {
     public BirdSeed(){
         //BirdSeed(2);
         //new BirdSeed(2);
+        //this.numberBags = new BirdSeed(2).numberBags; //another way
         this(2);
         //LINE1
         call = false;
