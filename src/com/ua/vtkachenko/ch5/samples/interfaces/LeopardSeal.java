@@ -1,6 +1,6 @@
 package com.ua.vtkachenko.ch5.samples.interfaces;
 
-public class LeopardSeal extends HarborSeal {
+public class LeopardSeal implements HasTail, HashWhiskers {
 
     public int getNumberOfWhiskers(){
         return 0;
