@@ -18,7 +18,6 @@ public class Lemur extends Primate implements HasTail {
 
         Primate primate = lemur;
         System.out.println(primate.hasHair());
-        System.out.println(primate.hasHair());
     }
 
 }
